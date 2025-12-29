@@ -1110,10 +1110,6 @@ label {
 }
 
 @media (max-width: 400px) {
-  .col-md-8 {
-    width: 60%;
-  }
-
   .col-md-10 {
     width: 65%;
   }
