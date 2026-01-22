@@ -1,6 +1,5 @@
 #process {
     padding: 100px 0;
-    background: #fff;
 }
 
 .process-row {
@@ -29,7 +28,7 @@
     width: 4rem;
     height: 4rem;
     background: #00569e;
-    border-radius: 50%;
+    border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,13 +38,13 @@
 }
 
 .process-step:hover .process-icon {
-    transform: translateY(-3px);
+    transform: translate(6px, 0px);
 }
 
 .step-number {
     position: absolute;
-    top: -10px;
-    right: -5px;
+    top: 0;
+    right: -30px;
     width: 24px;
     height: 24px;
     background: #fff;
@@ -99,6 +98,5 @@
 }
 
 #process p {
-    color: #555;
     margin: 15px 0;
 }
