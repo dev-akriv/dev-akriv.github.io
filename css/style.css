@@ -453,6 +453,8 @@ a:focus,
   font-weight: 800;
   color: transparent;
   background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   background-image: linear-gradient(135deg, #00569e, #00b5f8);
 }
 
@@ -563,6 +565,20 @@ a:focus,
   animation-name: MOVE-BG;
 }
 
+@-webkit-keyframes MOVE-BG {
+  0% {
+    left: 0;
+  }
+
+  50% {
+    left: calc(100% - 10px);
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
 @keyframes MOVE-BG {
   0% {
     left: 0;
@@ -578,6 +594,12 @@ a:focus,
 }
 
 @keyframes pulse {
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@-webkit-keyframes pulse {
   50% {
     opacity: 0.5;
   }
@@ -600,11 +622,13 @@ a:focus,
   0%,
   100% {
     transform: translateY(-25%);
+    -webkit-transform: translateY(-25%);
     animation-timing-function: cubic-bezier(.8, 0, 1, 1);
   }
 
   50% {
     transform: none;
+    -webkit-transform: none;
     animation-timing-function: cubic-bezier(0, 0, .2, 1);
   }
 }
@@ -614,10 +638,12 @@ a:focus,
   0%,
   100% {
     transform: translateY(0);
+    -webkit-transform: translateY(0);
   }
 
   50% {
     transform: translateY(-20%);
+    -webkit-transform: translateY(-20%);
   }
 }
 
@@ -681,10 +707,22 @@ a:focus,
 @keyframes rotate-img {
   0% {
     transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
   }
 
   100% {
     transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes rotate-img {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
   }
 }
 
@@ -693,11 +731,12 @@ a:focus,
 }
 
 #about .about-img-div {
-  padding: 4px;
+  /* padding: 4px; */
   /* background-image: linear-gradient(to bottom right, #0095b333, #661aff33); */
   background-image: linear-gradient(to bottom right, #0095ff33, #0a57c233);
   aspect-ratio: 1 / 1;
   border-radius: 16px;
+  position: relative;
 }
 
 #about .about-img-div-2 {
@@ -708,8 +747,11 @@ a:focus,
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  bottom: 4px;
+  left: 4px;
 }
 
 #about .about-img-div-3 {
