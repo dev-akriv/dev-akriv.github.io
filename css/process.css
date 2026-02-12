@@ -2,6 +2,31 @@
     padding: 100px 0;
 }
 
+#process .section-title h2 {
+    font-size: 14px;
+    letter-spacing: 0.7px;
+    color: #fff;
+    background: #00569e;
+    border-radius: 8px;
+    padding: 5px;
+    line-height: unset;
+    max-width: 130px;
+    margin: 0 auto;
+}
+
+#process .section-title p {
+    font-size: 36px;
+    margin: 15px auto;
+    color: transparent;
+    background-image: linear-gradient(135deg, #00569e, #00b5f8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    font-family: Syne, sans-serif;
+    max-width: 672px;
+    line-height: 1.1;
+}
+
 .process-row {
     position: relative;
     margin-top: 30px;
@@ -27,18 +52,19 @@
 .process-icon {
     width: 4rem;
     height: 4rem;
-    background: #00569e;
+    background: #0b60ea1a;
     border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
+    color: #00569e;
     font-size: 28px;
     transition: all 0.3s ease;
 }
 
 .process-step:hover .process-icon {
     transform: translate(6px, 0px);
+    background: #0b60ea33;
 }
 
 .step-number {

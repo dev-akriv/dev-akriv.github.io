@@ -5,6 +5,31 @@
     scroll-margin-top: 80px;
 }
 
+#faq .section-title h2 {
+    font-size: 14px;
+    letter-spacing: 0.7px;
+    color: #fff;
+    background: #00569e;
+    border-radius: 8px;
+    padding: 5px;
+    line-height: unset;
+    max-width: 70px;
+    margin: 0 auto;
+}
+
+#faq .section-title p {
+    font-size: 36px;
+    margin: 15px auto;
+    color: transparent;
+    background-image: linear-gradient(135deg, #00569e, #00b5f8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    font-family: Syne, sans-serif;
+    max-width: 672px;
+    line-height: 1.1;
+}
+
 #faq .faq-row {
     display: flex;
     flex-wrap: wrap;
